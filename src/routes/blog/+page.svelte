@@ -99,11 +99,12 @@
                 <img src="roblox.jpg" alt="Roblox">
                 <p>Количество:</p>
                 <select id="robloxSelect">
-                    <option value="40" data-price="10">$10</option>
-                    <option value="80" data-price="15">$15</option>
-                    <option value="200" data-price="25">$25</option>
-                    <option value="400" data-price="40">$40</option>
+                    <option value="40" data-price="10">40</option>
+                    <option value="80" data-price="15">80</option>
+                    <option value="200" data-price="25">200</option>
+                    <option value="400" data-price="40">400</option>
                 </select>
+                <div class="price" id="robloxPrice"></div>
                 <button onclick="addToCart('Roblox', document.getElementById('robloxSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -112,11 +113,12 @@
                 <img src="fortnite.jpg" alt="Fortnite">
                 <p>Количество:</p>
                 <select id="fortniteSelect">
-                    <option value="1000" data-price="20">$20</option>
-                    <option value="2800" data-price="35">$35</option>
-                    <option value="5000" data-price="15">$15</option>
-                    <option value="13500" data-price="50">$50</option>
+                    <option value="1000" data-price="30">1000</option>
+                    <option value="2800" data-price="50">2800</option>
+                    <option value="5000" data-price="80">5000</option>
+                    <option value="13500" data-price="120">13500</option>
                 </select>
+                <div class="price" id="fortnitePrice"></div>
                 <button onclick="addToCart('Fortnite', document.getElementById('fortniteSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -125,11 +127,12 @@
                 <img src="rocket-league.jpg" alt="Rocket League">
                 <p>Количество:</p>
                 <select id="rocketLeagueSelect">
-                    <option value="500" data-price="10">$10</option>
-                    <option value="1100" data-price="20">$20</option>
-                    <option value="300" data-price="5">$5</option>
-                    <option value="6500" data-price="30">$30</option>
+                    <option value="500" data-price="20">500</option>
+                    <option value="1100" data-price="35">1100</option>
+                    <option value="300" data-price="15">300</option>
+                    <option value="6500" data-price="50">6500</option>
                 </select>
+                <div class="price" id="rocketLeaguePrice"></div>
                 <button onclick="addToCart('Rocket League', document.getElementById('rocketLeagueSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -138,19 +141,20 @@
                 <img src="brawl-stars.jpg" alt="Brawl Stars">
                 <p>Количество:</p>
                 <select id="brawlStarsSelect">
-                    <option value="30" data-price="5">$5</option>
-                    <option value="80" data-price="10">$10</option>
-                    <option value="170" data-price="15">$15</option>
-                    <option value="360" data-price="25">$25</option>
-                    <option value="720" data-price="40">$40</option>
+                    <option value="30" data-price="5">30</option>
+                    <option value="80" data-price="10">80</option>
+                    <option value="170" data-price="15">170</option>
+                    <option value="360" data-price="25">360</option>
+                    <option value="720" data-price="40">720</option>
                 </select>
+                <div class="price" id="brawlStarsPrice"></div>
                 <button onclick="addToCart('Brawl Stars', document.getElementById('brawlStarsSelect').value)">Добавить в корзину</button>
             </div>
         </div>
     </div>
 
     <script>
-         function updatePrice(selectId, priceId) {
+        function updatePrice(selectId, priceId) {
             const select = document.getElementById(selectId);
             const price = document.getElementById(priceId);
             const selectedOption = select.options[select.selectedIndex];
@@ -181,4 +185,5 @@
     </script>
 </body>
 </html>
+
 
