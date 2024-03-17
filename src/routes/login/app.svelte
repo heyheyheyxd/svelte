@@ -1,7 +1,7 @@
-<!-- App.svelte -->
+<!-- app.svelte -->
 <script>
     import { Router } from 'svelte-routing';
-    import Page from './page.svelte';
+    import Page from '/+page.svelte';
 </script>
 
 <Router>
@@ -9,5 +9,7 @@
 </Router>
 
 <style>
-    /* Добавьте здесь глобальные стили */
+    /* Здесь можно добавить глобальные стили */
 </style>
+
+
