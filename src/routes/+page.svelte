@@ -82,7 +82,7 @@
             <h1>Добро пожаловать в Heyheyhey Digital Store</h1>
             <h2>Магазин цифровых товаров для вашего удобства.</h2>
             <div class='scroll-button animate-scroll'>
-                <a href='/about'>Узнать больше <span class="arrow"></span></a>
+                <a href='/login'>Узнать больше <span class="arrow"></span></a>
             </div>
         </div>
     </div>
