@@ -83,7 +83,7 @@
         <div class="catalog">
             <div class="product">
                 <h2>Roblox</h2>
-                <p>Цена:</p>
+                <p>Количество:</p>
                 <select id="robloxSelect">
                     <option value="40">40</option>
                     <option value="80">80</option>
@@ -95,7 +95,7 @@
 
             <div class="product">
                 <h2>Fortnite</h2>
-                <p>Цена:</p>
+                <p>Количество:</p>
                 <select id="fortniteSelect">
                     <option value="1000">1000</option>
                     <option value="2800">2800</option>
@@ -107,7 +107,7 @@
 
             <div class="product">
                 <h2>Rocket League</h2>
-                <p>Цена:</p>
+                <p>Количество:</p>
                 <select id="rocketLeagueSelect">
                     <option value="500">500</option>
                     <option value="1100">1100</option>
@@ -119,7 +119,7 @@
 
             <div class="product">
                 <h2>Brawl Stars</h2>
-                <p>Цена:</p>
+                <p>Количество:</p>
                 <select id="brawlStarsSelect">
                     <option value="30">30</option>
                     <option value="80">80</option>

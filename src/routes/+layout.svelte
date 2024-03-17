@@ -52,6 +52,7 @@
                 <a href="/about" class="link">Обо мне</a>
                 <a href="/blog" class="link">Каталог</a>
                 <a href="/contact" class="link">Контакты</a>
+                <a href="/login" class="link">Войти или зарегестрироваться</a>
             </div>
         </div>
     </nav>
