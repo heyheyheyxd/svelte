@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heyheyhey Shop</title>
+    <title>Heyheyhey Digital Store</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -43,8 +43,8 @@
             background-color: #333;
             height: 300px;
             margin: 0 -20px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
         }
 
         .scroll-button {
@@ -52,7 +52,7 @@
         }
 
         .scroll-button a {
-            background-color: #333;
+            background-color: #007bff;
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
@@ -61,7 +61,7 @@
         }
 
         .scroll-button a:hover {
-            background-color: #555;
+            background-color: #0056b3;
         }
 
         .arrow {
@@ -69,7 +69,7 @@
             height: 0;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-top: 10px solid #333;
+            border-top: 10px solid #007bff;
             margin-left: 5px;
             display: inline-block;
             vertical-align: middle;
@@ -79,8 +79,8 @@
 <body>
     <div class="container">
         <div class="info">
-            <h1>Добро пожаловать в Heyheyhey Shop</h1>
-            <h2>Магазин стильной одежды и кроссовок для вашего активного образа жизни.</h2>
+            <h1>Добро пожаловать в Heyheyhey Digital Store</h1>
+            <h2>Магазин цифровых товаров для вашего удобства.</h2>
             <div class='scroll-button animate-scroll'>
                 <a href='/about'>Узнать больше <span class="arrow"></span></a>
             </div>
@@ -90,3 +90,4 @@
     <div class="background-div"></div>
 </body>
 </html>
+
