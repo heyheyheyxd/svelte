@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог - Heyheyhey Digital Store</title>
     <style>
-    .background {
-    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
-}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -92,13 +89,14 @@
         }
     </style>
 </head>
-<body class="background">
+<body>
     <div class="container">
         <h1>Каталог</h1>
 
         <div class="catalog">
             <div class="product">
                 <h2>Roblox</h2>
+                <img src="roblox.jpg" alt="Roblox">
                 <p>Количество:</p>
                 <select id="robloxSelect">
                     <option value="40" data-price="10">40</option>
@@ -112,6 +110,7 @@
 
             <div class="product">
                 <h2>Fortnite</h2>
+                <img src="fortnite.jpg" alt="Fortnite">
                 <p>Количество:</p>
                 <select id="fortniteSelect">
                     <option value="1000" data-price="30">1000</option>
@@ -125,6 +124,7 @@
 
             <div class="product">
                 <h2>Rocket League</h2>
+                <img src="rocket-league.jpg" alt="Rocket League">
                 <p>Количество:</p>
                 <select id="rocketLeagueSelect">
                     <option value="500" data-price="20">500</option>
@@ -138,6 +138,7 @@
 
             <div class="product">
                 <h2>Brawl Stars</h2>
+                <img src="brawl-stars.jpg" alt="Brawl Stars">
                 <p>Количество:</p>
                 <select id="brawlStarsSelect">
                     <option value="30" data-price="5">30</option>
@@ -184,5 +185,3 @@
     </script>
 </body>
 </html>
-
-
