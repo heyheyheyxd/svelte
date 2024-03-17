@@ -1,3 +1,7 @@
+<div>
+    <h1>{message}</h1>
+    <button on:click={setUsername}>Войти или зарегистрироваться</button>
+</div>
 <script>
     let message = 'Введите свой ник';
 
@@ -8,11 +12,6 @@
         }
     }
 </script>
-
-<div>
-    <h1>{message}</h1>
-    <button on:click={setUsername}>Войти или зарегистрироваться</button>
-</div>
 
 
 
