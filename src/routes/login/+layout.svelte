@@ -1,5 +1,5 @@
 <div class="container">
-	<a href="/routes/+page.svelte">Домой</a>
+	<a href="/routes">Домой</a>
 	<slot/>
 </div>
 
