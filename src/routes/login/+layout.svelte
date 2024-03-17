@@ -1,5 +1,5 @@
 <div class="container">
-	<a href="/xd">Домой</a>
+	<a href="/routes/+page">Домой</a>
 	<slot/>
 </div>
 
