@@ -1,5 +1,7 @@
 <!-- Register.svelte -->
 <script>
+    export let setUsername;
+
     let username = "";
 
     function handleUsernameChange(event) {
@@ -7,12 +9,9 @@
     }
 
     function handleRegister() {
-        // Здесь вы можете отправить данные пользователя на сервер для регистрации
-        alert(`Пользователь с ником ${username} успешно зарегистрирован!`);
+        setUsername(username);
     }
 </script>
-
-<h1>Регистрация</h1>
 
 <label>
     Ник:
@@ -20,5 +19,6 @@
 </label>
 
 <button on:click={handleRegister}>Зарегистрироваться</button>
+
 
 

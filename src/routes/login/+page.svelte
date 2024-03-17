@@ -1,15 +1,24 @@
-<!-- +Page.svelte -->
+<!-- Page.svelte -->
 <script>
     let username = "";
 
-    import Register from './Register.svelte';
+    function setUsername(value) {
+        username = value;
+    }
 </script>
 
 <nav>
     <h3>{username || "Регистрация"}</h3>
 </nav>
 
-<Register />
+<style>
+    nav {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+
 
 
 
