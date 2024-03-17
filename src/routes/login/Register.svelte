@@ -1,21 +1,24 @@
 <!-- Register.svelte -->
 <script>
-    import GoogleLogin from 'svelte-google-login';
+    let username = "";
 
-    async function handleLogin(user) {
-        console.log(user);
-        // В этой функции вы можете отправить данные пользователя на сервер для регистрации
+    function handleUsernameChange(event) {
+        username = event.target.value;
+    }
+
+    function handleRegister() {
+        // Здесь вы можете отправить данные пользователя на сервер для регистрации
+        alert(`Пользователь с ником ${username} успешно зарегистрирован!`);
     }
 </script>
 
 <h1>Регистрация</h1>
 
-<p>Зарегистрируйтесь с помощью Google:</p>
-<GoogleLogin
-    clientId="YOUR_CLIENT_ID"
-    onSuccess={handleLogin}
-    onFailure={(error) => console.log(error)}
->
-    <button>Войти с Google</button>
-</GoogleLogin>
+<label>
+    Ник:
+    <input type="text" bind:value={username} on:input={handleUsernameChange} required>
+</label>
+
+<button on:click={handleRegister}>Зарегистрироваться</button>
+
 
