@@ -1,7 +1,4 @@
-<div>
-    <h1>{message}</h1>
-    <button on:click={setUsername}>Войти или зарегистрироваться</button>
-</div>
+<!-- src/routes/login/index.svelte -->
 <script>
     let message = 'Введите свой ник';
 
@@ -12,6 +9,12 @@
         }
     }
 </script>
+
+<div>
+    <h1>{message}</h1>
+    <button on:click={setUsername}>Войти или зарегистрироваться</button>
+</div>
+
 
 
 
