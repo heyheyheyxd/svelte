@@ -98,13 +98,13 @@
                 <h2>Roblox</h2>
                 <img src="roblox.jpg" alt="Roblox">
                 <p>Количество:</p>
-                <select id="robloxSelect">
-                    <option value="40" data-price="10">40</option>
-                    <option value="80" data-price="15">80</option>
-                    <option value="200" data-price="25">200</option>
-                    <option value="400" data-price="40">400</option>
+                <select id="robloxSelect" onchange="updatePrice('robloxSelect', 'robloxPrice')">
+                    <option value="40" data-price="10">$10</option>
+                    <option value="80" data-price="15">$15</option>
+                    <option value="200" data-price="25">$25</option>
+                    <option value="400" data-price="40">$40</option>
                 </select>
-                <div class="price" id="robloxPrice"></div>
+                <p class="price" id="robloxPrice">Цена: $10</p>
                 <button onclick="addToCart('Roblox', document.getElementById('robloxSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -112,13 +112,13 @@
                 <h2>Fortnite</h2>
                 <img src="fortnite.jpg" alt="Fortnite">
                 <p>Количество:</p>
-                <select id="fortniteSelect">
-                    <option value="1000" data-price="30">1000</option>
-                    <option value="2800" data-price="50">2800</option>
-                    <option value="5000" data-price="80">5000</option>
-                    <option value="13500" data-price="120">13500</option>
+                <select id="fortniteSelect" onchange="updatePrice('fortniteSelect', 'fortnitePrice')">
+                    <option value="1000" data-price="20">$20</option>
+                    <option value="2800" data-price="35">$35</option>
+                    <option value="5000" data-price="15">$15</option>
+                    <option value="13500" data-price="50">$50</option>
                 </select>
-                <div class="price" id="fortnitePrice"></div>
+                <p class="price" id="fortnitePrice">Цена: $20</p>
                 <button onclick="addToCart('Fortnite', document.getElementById('fortniteSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -126,13 +126,13 @@
                 <h2>Rocket League</h2>
                 <img src="rocket-league.jpg" alt="Rocket League">
                 <p>Количество:</p>
-                <select id="rocketLeagueSelect">
-                    <option value="500" data-price="20">500</option>
-                    <option value="1100" data-price="35">1100</option>
-                    <option value="300" data-price="15">300</option>
-                    <option value="6500" data-price="50">6500</option>
+                <select id="rocketLeagueSelect" onchange="updatePrice('rocketLeagueSelect', 'rocketLeaguePrice')">
+                    <option value="500" data-price="10">$10</option>
+                    <option value="1100" data-price="20">$20</option>
+                    <option value="300" data-price="5">$5</option>
+                    <option value="6500" data-price="30">$30</option>
                 </select>
-                <div class="price" id="rocketLeaguePrice"></div>
+                <p class="price" id="rocketLeaguePrice">Цена: $10</p>
                 <button onclick="addToCart('Rocket League', document.getElementById('rocketLeagueSelect').value)">Добавить в корзину</button>
             </div>
 
@@ -140,14 +140,14 @@
                 <h2>Brawl Stars</h2>
                 <img src="brawl-stars.jpg" alt="Brawl Stars">
                 <p>Количество:</p>
-                <select id="brawlStarsSelect">
-                    <option value="30" data-price="5">30</option>
-                    <option value="80" data-price="10">80</option>
-                    <option value="170" data-price="15">170</option>
-                    <option value="360" data-price="25">360</option>
-                    <option value="720" data-price="40">720</option>
+                <select id="brawlStarsSelect" onchange="updatePrice('brawlStarsSelect', 'brawlStarsPrice')">
+                    <option value="30" data-price="5">$5</option>
+                    <option value="80" data-price="10">$10</option>
+                    <option value="170" data-price="15">$15</option>
+                    <option value="360" data-price="25">$25</option>
+                    <option value="720" data-price="40">$40</option>
                 </select>
-                <div class="price" id="brawlStarsPrice"></div>
+                <p class="price" id="brawlStarsPrice">Цена: $5</p>
                 <button onclick="addToCart('Brawl Stars', document.getElementById('brawlStarsSelect').value)">Добавить в корзину</button>
             </div>
         </div>
@@ -162,27 +162,12 @@
             price.textContent = `Цена: $${selectedPrice}`;
         }
 
-        const products = [
-            { name: 'Roblox', image: 'roblox.jpg', options: [40, 80, 200, 400], prices: [10, 15, 25, 40] },
-            { name: 'Fortnite', image: 'fortnite.jpg', options: [1000, 2800, 5000, 13500], prices: [30, 50, 80, 120] },
-            { name: 'Rocket League', image: 'rocket-league.jpg', options: [500, 1100, 300, 6500], prices: [20, 35, 15, 50] },
-            { name: 'Brawl Stars', image: 'brawl-stars.jpg', options: [30, 80, 170, 360, 720], prices: [5, 10, 15, 25, 40] }
-        ];
-
         function addToCart(productName, quantity) {
-            const product = products.find(p => p.name === productName);
-            const priceIndex = product.options.indexOf(parseInt(quantity));
-            const totalPrice = product.prices[priceIndex];
+            const totalPrice = parseInt(quantity);
             alert(`Товар "${productName}" в количестве ${quantity} добавлен в корзину. Общая сумма: $${totalPrice}`);
         }
-
-        window.onload = function () {
-            updatePrice('robloxSelect', 'robloxPrice');
-            updatePrice('fortniteSelect', 'fortnitePrice');
-            updatePrice('rocketLeagueSelect', 'rocketLeaguePrice');
-            updatePrice('brawlStarsSelect', 'brawlStarsPrice');
-        };
     </script>
 </body>
 </html>
+
 
