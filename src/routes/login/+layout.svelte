@@ -1,5 +1,5 @@
 <div class="container">
-	<a href="/about">Домой</a>
+	<a href="/xd">Домой</a>
 	<slot/>
 </div>
 
