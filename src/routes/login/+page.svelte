@@ -31,16 +31,16 @@
 
 <style>
     .background {
-    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+    background-color: #e0f3ff; 
 }
 
     .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
-        background-color: #f4f4f4; /* Устанавливаем фоновый цвет */
+        background-color: #f4f4f4; 
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
 </style>

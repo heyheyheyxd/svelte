@@ -6,7 +6,7 @@
     <title>Обо мне - Heyheyhey Digital Store</title>
     <style>
             .background {
-    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+    background-color: #e0f3ff; 
 }
         body {
             font-family: Arial, sans-serif;
@@ -33,8 +33,8 @@
             font-size: 2.5rem;
             color: #333;
             margin-bottom: 20px;
-            text-transform: uppercase; /* Преобразование текста в верхний регистр */
-            letter-spacing: 2px; /* Увеличение расстояния между буквами */
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
         }
 
         .content p {
@@ -44,12 +44,12 @@
             margin-bottom: 15px;
         }
 
-        /* Добавим стили для подчеркивания текста */
+        
         .underline {
             text-decoration: underline;
         }
 
-        /* Добавим стили для кнопки */
+       
         .btn {
             display: inline-block;
             padding: 10px 20px;

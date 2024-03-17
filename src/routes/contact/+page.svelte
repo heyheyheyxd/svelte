@@ -6,7 +6,7 @@
     <title>Контакты - Heyheyhey Digital Store</title>
     <style>
     .background {
-    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+    background-color: #e0f3ff; 
 }
         body {
             font-family: Arial, sans-serif;
