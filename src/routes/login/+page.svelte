@@ -1,11 +1,16 @@
 <script>
     let username = '';
     let isLoggedIn = false;
-    
+
     function displayUsername() {
         if (username.trim() !== "") {
             isLoggedIn = true;
         }
+    }
+    
+    $: {
+        // Это реактивное выражение, которое будет выполнено каждый раз, когда изменится isLoggedIn
+        console.log('isLoggedIn:', isLoggedIn);
     }
 </script>
 
@@ -16,4 +21,5 @@
     <input type="text" bind:value={username} placeholder="Введите ваш ник">
     <button on:click={displayUsername}>Войти</button>
 {/if}
+
 
