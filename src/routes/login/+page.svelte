@@ -20,9 +20,9 @@
 </script>
 
 <div class="container">
-    <h1>
+    <button on:click={refreshPage} class="link-button">
         Дополнительная информация
-    </h1>
+    </button>
 
     <p class={isVisible ? 'fade-in' : ''}>
         Добро пожаловать на страницу "Дополнительная информация"! В нашем магазине мы предлагаем широкий выбор игровых товаров:
@@ -40,16 +40,19 @@
 </div>
 
 <style>
-    h1 {
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 20px;
-        cursor: pointer; /* Добавляем курсор при наведении */
-        transition: color 0.3s ease-in-out; /* Добавляем плавный переход цвета */
+    .link-button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: #007bff;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
     }
 
-    h1:hover {
-        color: #ff6600; /* Изменяем цвет при наведении */
+    .link-button:hover {
+        color: #0056b3;
     }
 
     .container {
@@ -76,6 +79,7 @@
         background-color: #0056b3; /* Изменяем цвет при наведении */
     }
 </style>
+
 
 
 
