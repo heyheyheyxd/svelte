@@ -1,9 +1,9 @@
 <script>
-    let username = '';
     let message = 'Введите свой ник';
 
     function setUsername() {
-        if (username.trim() !== "") {
+        const username = prompt("Введите свой ник:");
+        if (username !== null && username.trim() !== "") {
             message = `Привет, ${username}!`;
         }
     }
@@ -11,10 +11,9 @@
 
 <div>
     <h1>{message}</h1>
-    {#if message === 'Введите свой ник'}
-        <input type="text" bind:value={username} placeholder="Введите ваш ник" on:keyup={setUsername}>
-    {/if}
+    <button on:click={setUsername}>Войти или зарегистрироваться</button>
 </div>
+
 
 
 
