@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты - Heyheyhey Digital Store</title>
     <style>
+    .background {
+    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -58,7 +61,7 @@
         }
     </style>
 </head>
-<body>
+<body class="background">
     <div class="container">
         <h1>Контакты</h1>
 

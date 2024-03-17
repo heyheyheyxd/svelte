@@ -13,7 +13,7 @@
         isVisible = true;
     });
 </script>
-
+<body class="background">
 <div class="container">
     <h1>Дополнительная информация</h1>
     <p class={isVisible ? 'fade-in' : ''}>
@@ -30,7 +30,9 @@
 </div>
 
 <style>
-
+    .background {
+    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+}
 
     .container {
         max-width: 800px;
@@ -42,6 +44,7 @@
     }
 
 </style>
+</body>
 
 
 

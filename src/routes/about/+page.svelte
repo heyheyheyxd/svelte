@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне - Heyheyhey Digital Store</title>
     <style>
+            .background {
+    background-color: #e0f3ff; /* Цвет фона, который вы хотите использовать */
+}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -65,14 +68,14 @@
         }
     </style>
 </head>
-<body>
+<body class="background">
     <div class="container">
         <div class="content">
             <h2 class="underline">Обо мне</h2>
             <p>Привет! Меня зовут Усимов Дмитрий и я основатель <span class="underline">Heyheyhey Digital Store</span>. Наш магазин предлагает широкий выбор цифровых товаров, включая программное обеспечение, музыку, книги, видеоигры и многое другое.</p>
             <p>Мы стремимся предоставить нашим клиентам лучший опыт покупок, обеспечивая качественный сервис и быструю доставку цифровых товаров. Наша команда гордится тем, что мы можем помочь вам найти именно то, что вам нужно.</p>
             <p>Спасибо, что выбрали наш магазин!</p>
-            <button class="btn">Узнать больше</button> <!-- Добавлена кнопка для дополнительной информации -->
+            <a href='/login' class="btn">Узнать больше <span class="arrow"></span></a>
         </div>
     </div>
 </body>
