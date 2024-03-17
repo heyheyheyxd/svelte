@@ -27,25 +27,54 @@
         }
 
         .content h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase; /* Преобразование текста в верхний регистр */
+            letter-spacing: 2px; /* Увеличение расстояния между буквами */
         }
 
         .content p {
             font-size: 1.2rem;
             color: #666;
             line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Добавим стили для подчеркивания текста */
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* Добавим стили для кнопки */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <h2>Обо мне</h2>
-            <p>Привет! Меня зовут Усимов Дмитрий и я основатель Heyheyhey Digital Store. Наш магазин предлагает широкий выбор цифровых товаров, включая программное обеспечение, музыку, книги, видеоигры и многое другое.</p>
+            <h2 class="underline">Обо мне</h2>
+            <p>Привет! Меня зовут Усимов Дмитрий и я основатель <span class="underline">Heyheyhey Digital Store</span>. Наш магазин предлагает широкий выбор цифровых товаров, включая программное обеспечение, музыку, книги, видеоигры и многое другое.</p>
             <p>Мы стремимся предоставить нашим клиентам лучший опыт покупок, обеспечивая качественный сервис и быструю доставку цифровых товаров. Наша команда гордится тем, что мы можем помочь вам найти именно то, что вам нужно.</p>
             <p>Спасибо, что выбрали наш магазин!</p>
+            <button class="btn">Узнать больше</button> <!-- Добавлена кнопка для дополнительной информации -->
         </div>
     </div>
 </body>
 </html>
+
