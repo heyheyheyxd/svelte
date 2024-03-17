@@ -4,11 +4,6 @@
 
     let isVisible = false;
 
-    // Функция для обновления страницы
-    function refreshPage() {
-        window.location.reload();
-    }
-
     // Функция для форматирования времени
     function formatTime(time) {
         return new Date(time).toLocaleString();
@@ -20,10 +15,7 @@
 </script>
 
 <div class="container">
-    <button on:click={refreshPage} class="link-button">
-        Дополнительная информация
-    </button>
-
+    <h1>Дополнительная информация</h1>
     <p class={isVisible ? 'fade-in' : ''}>
         Добро пожаловать на страницу "Дополнительная информация"! В нашем магазине мы предлагаем широкий выбор игровых товаров:
     </p>
@@ -34,26 +26,11 @@
         Не упустите возможность приобрести игры и аксессуары по выгодным ценам! Для получения дополнительной информации свяжитесь с нами по телефону или по электронной почте.
     </p>
 
-    <button class="refresh-button" on:click={refreshPage}>Обновить страницу</button>
-
     <p>Последнее обновление страницы: {formatTime(Date.now())}</p>
 </div>
 
 <style>
-    .link-button {
-        background: none;
-        border: none;
-        padding: 0;
-        font: inherit;
-        color: #007bff;
-        cursor: pointer;
-        text-decoration: underline;
-        font-weight: bold;
-    }
 
-    .link-button:hover {
-        color: #0056b3;
-    }
 
     .container {
         max-width: 800px;
@@ -64,20 +41,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
     }
 
-    .refresh-button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-        transition: background-color 0.3s ease-in-out; /* Плавный переход цвета фона */
-    }
-
-    .refresh-button:hover {
-        background-color: #0056b3; /* Изменяем цвет при наведении */
-    }
 </style>
 
 
