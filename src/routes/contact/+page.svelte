@@ -6,7 +6,7 @@
     <title>Контакты - Heyheyhey Digital Store</title>
     <style>
     .background {
-    background-color: #e0f3ff; 
+    background-color: #CCEEFF; 
 }
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #CCCCFF;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }

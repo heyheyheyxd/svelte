@@ -6,7 +6,7 @@
     <title>Каталог - Heyheyhey Digital Store</title>
     <style>
                     .background {
-    background-color: #e0f3ff; 
+    background-color: #CCEEFF; 
 }
         body {
             font-family: Arial, sans-serif;
@@ -19,14 +19,14 @@
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #CCCCFF;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #007bff;
         }
 
         .catalog {
@@ -40,7 +40,7 @@
             width: 250px;
             margin: 20px;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #e0f3ff;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -99,7 +99,7 @@
         <div class="catalog">
             <div class="product">
                 <h2>Roblox</h2>
-                <p>Количество:</p>
+                <p>Количество робуксов:</p>
                 <select id="robloxSelect">
                     <option value="40" data-price="10">40</option>
                     <option value="80" data-price="15">80</option>
@@ -112,7 +112,7 @@
 
             <div class="product">
                 <h2>Fortnite</h2>
-                <p>Количество:</p>
+                <p>Количество в-баксов:</p>
                 <select id="fortniteSelect">
                     <option value="1000" data-price="30">1000</option>
                     <option value="2800" data-price="50">2800</option>
@@ -125,7 +125,7 @@
 
             <div class="product">
                 <h2>Rocket League</h2>
-                <p>Количество:</p>
+                <p>Количество кредитов:</p>
                 <select id="rocketLeagueSelect">
                     <option value="500" data-price="20">500</option>
                     <option value="1100" data-price="35">1100</option>
@@ -138,7 +138,7 @@
 
             <div class="product">
                 <h2>Brawl Stars</h2>
-                <p>Количество:</p>
+                <p>Количество гемов:</p>
                 <select id="brawlStarsSelect">
                     <option value="30" data-price="5">30</option>
                     <option value="80" data-price="10">80</option>
@@ -160,27 +160,45 @@
             const selectedPrice = selectedOption.getAttribute('data-price');
             price.textContent = `Цена: $${selectedPrice}`;
         }
-
+    
         const products = [
             { name: 'Roblox', image: 'roblox.jpg', options: [40, 80, 200, 400], prices: [10, 15, 25, 40] },
             { name: 'Fortnite', image: 'fortnite.jpg', options: [1000, 2800, 5000, 13500], prices: [30, 50, 80, 120] },
             { name: 'Rocket League', image: 'rocket-league.jpg', options: [500, 1100, 3000, 6500], prices: [20, 35, 50, 75] },
             { name: 'Brawl Stars', image: 'brawl-stars.jpg', options: [30, 80, 170, 360, 720], prices: [5, 10, 15, 25, 40] }
         ];
-
+    
         function addToCart(productName, quantity) {
             const product = products.find(p => p.name === productName);
             const priceIndex = product.options.indexOf(parseInt(quantity));
             const totalPrice = product.prices[priceIndex];
             alert(`Товар "${productName}" в количестве ${quantity} добавлен в корзину. Общая сумма: $${totalPrice}`);
         }
-
+    
         window.onload = function () {
             updatePrice('robloxSelect', 'robloxPrice');
             updatePrice('fortniteSelect', 'fortnitePrice');
             updatePrice('rocketLeagueSelect', 'rocketLeaguePrice');
             updatePrice('brawlStarsSelect', 'brawlStarsPrice');
+    
+            // Добавляем обработчики событий для обновления цены при изменении количества товара
+            document.getElementById('robloxSelect').addEventListener('change', function () {
+                updatePrice('robloxSelect', 'robloxPrice');
+            });
+    
+            document.getElementById('fortniteSelect').addEventListener('change', function () {
+                updatePrice('fortniteSelect', 'fortnitePrice');
+            });
+    
+            document.getElementById('rocketLeagueSelect').addEventListener('change', function () {
+                updatePrice('rocketLeagueSelect', 'rocketLeaguePrice');
+            });
+    
+            document.getElementById('brawlStarsSelect').addEventListener('change', function () {
+                updatePrice('brawlStarsSelect', 'brawlStarsPrice');
+            });
         };
     </script>
+    
 </body>
 </html>
