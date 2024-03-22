@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обо мне - Heyheyhey Digital Store</title>
+    <title>О кинотеатре - Heyheyhey Cinema</title>
     <style>
-        .background {
-            background-color: #CCEEFF;
-        }
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #990000; /* Красный цвет фона */
+            background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
         }
 
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #CCCCFF;
             border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.7); /* Черный цвет с полупрозрачностью */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Тень белого цвета */
         }
 
         .content {
@@ -32,25 +29,25 @@
 
         .content h2 {
             font-size: 2.5rem;
-            color: #333;
+            color: #ffffff; /* Белый цвет текста */
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 2px solid #007bff; /* Добавляем подчеркивание */
+            border-bottom: 2px solid #ff0000; /* Красная граница снизу */
             display: inline-block;
             padding-bottom: 10px;
         }
 
         .content p {
             font-size: 1.2rem;
-            color: #666;
+            color: #ffffff; /* Белый цвет текста */
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
         .underline {
             text-decoration: none;
-            color: #007bff;
+            color: #ffffff; /* Белый цвет текста */
         }
 
         .underline:hover {
@@ -60,8 +57,8 @@
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #ff0000; /* Красный цвет кнопки */
+            color: #ffffff; /* Белый цвет текста кнопки */
             border: none;
             border-radius: 5px;
             font-size: 1.2rem;
@@ -72,11 +69,11 @@
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #660000; /* Темно-красный цвет при наведении */
         }
 
         .arrow {
-            border: solid #fff;
+            border: solid #ffffff; /* Белая граница стрелки */
             border-width: 0 3px 3px 0;
             display: inline-block;
             padding: 3px;
@@ -86,17 +83,19 @@
         }
     </style>
 </head>
-<body class="background">
+<body>
     <div class="container">
         <div class="content">
-            <h2>Обо мне</h2>
-            <p>Привет! Меня зовут Усимов Дмитрий и я основатель <span class="underline">Heyheyhey Digital Store</span>. Наш магазин предлагает широкий выбор цифровых товаров, включая программное обеспечение, музыку, книги, видеоигры и многое другое.</p>
-            <p>Мы стремимся предоставить нашим клиентам лучший опыт покупок, обеспечивая качественный сервис и быструю доставку цифровых товаров. Наша команда гордится тем, что мы можем помочь вам найти именно то, что вам нужно.</p>
-            <p>Спасибо, что выбрали наш магазин!</p>
-            <a href='/login' class="btn">Узнать больше <span class="arrow"></span></a>
+            <h2>О кинотеатре</h2>
+            <p>Добро пожаловать в кинотеатр "Heyheyhey Cinema"! Мы рады предложить вам самые лучшие фильмы и захватывающие сеансы для всей семьи.</p>
+            <p>Наши залы оснащены передовым оборудованием и созданы для того, чтобы вы могли насладиться каждым кадром великолепных кинолент.</p>
+            <p>Присоединяйтесь к нам и окунитесь в мир кинофантазий!</p>
+            <a href='/blog' class="btn">Расписание сеансов <span class="arrow"></span></a>
         </div>
     </div>
 </body>
 </html>
+
+
 
 

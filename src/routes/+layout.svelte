@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heyheyhey Shop</title>
+    <title>Heyheyhey Cinema</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
         }
         nav {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
             padding: 10px 0;
         }
@@ -27,14 +27,14 @@
             text-decoration: none;
             font-size: 24px;
             font-weight: bold;
-            color: #fff;
+            color: #ff0000;
         }
         .nav-links {
             display: flex;
         }
         .nav-links .link {
             text-decoration: none;
-            color: #fff;
+            color: #ff0000;
             margin-left: 20px;
         }
         .container {
@@ -47,12 +47,12 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="/" class="nav-logo" title="Back to home">Heyheyhey shop</a>
+            <a href="/" class="nav-logo" title="Back to home">Heyheyhey Cinema</a>
             <div class="nav-links">
-                <a href="/about" class="link">Обо мне</a>
+                <a href="/about" class="link">О кинотеатре</a>
                 <a href="/blog" class="link">Каталог</a>
+                <a href="/login" class="link">Анонс</a>
                 <a href="/contact" class="link">Контакты</a>
-                <a href="/login" class="link">Дополнительная информация</a>
             </div>
         </div>
     </nav>

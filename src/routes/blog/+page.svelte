@@ -3,202 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог - Heyheyhey Digital Store</title>
+    <title>Кинотеатр Heyheyhey</title>
     <style>
-                    .background {
-    background-color: #CCEEFF; 
-}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
         }
-
         .container {
             max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #CCCCFF;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 0; 
         }
-
         h1 {
             text-align: center;
-            color: #007bff;
+            color: #ff0000;
         }
-
         .catalog {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid; /* Используем grid layout */
+            grid-template-columns: repeat(2, 1fr); /* Два блока в одну строку */
+            gap: 20px; /* Расстояние между блоками */
             justify-content: center;
             margin-top: 30px;
         }
-
         .product {
-            width: 250px;
-            margin: 20px;
+            width: 100%;
             padding: 20px;
-            background-color: #e0f3ff;
+            background-color: #000000;
+            color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             text-align: center;
+            position: relative;
+            opacity: 0; /* Исходно скрываем блоки */
+            animation: fadeIn 1s ease-in-out forwards; /* Анимация появления */
         }
-
-        .product h2 {
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-
         .product img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            max-height: 300px;
             border-radius: 8px;
-        }
-
-        .product p {
-            color: #666;
             margin-bottom: 10px;
         }
-
+        .product h2 {
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+        .product p {
+            margin-bottom: 10px;
+        }
         .product select {
             margin-top: 10px;
             padding: 8px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #ffffff;
             width: 100%;
             box-sizing: border-box;
+            color: #000000;
+            background-color: #ffffff;
         }
-
         .product .price {
             margin-top: 10px;
-            color: #007bff;
+            color: #ff0000;
             font-weight: bold;
         }
-
         .product button {
             margin-top: 10px;
             padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #ff0000;
+            color: #ffffff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
         .product button:hover {
-            background-color: #0056b3;
+            background-color: #8b0000;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Начальная непрозрачность */
+            }
+            to {
+                opacity: 1; /* Конечная непрозрачность */
+            }
         }
     </style>
 </head>
 <body class="background">
     <div class="container">
-        <h1>Каталог</h1>
-
-        <div class="catalog">
-            <div class="product">
-                <h2>Roblox</h2>
-                <p>Количество робуксов:</p>
-                <select id="robloxSelect">
-                    <option value="40" data-price="10">40</option>
-                    <option value="80" data-price="15">80</option>
-                    <option value="200" data-price="25">200</option>
-                    <option value="400" data-price="40">400</option>
-                </select>
-                <div class="price" id="robloxPrice"></div>
-                <button onclick="addToCart('Roblox', document.getElementById('robloxSelect').value)">Добавить в корзину</button>
-            </div>
-
-            <div class="product">
-                <h2>Fortnite</h2>
-                <p>Количество в-баксов:</p>
-                <select id="fortniteSelect">
-                    <option value="1000" data-price="30">1000</option>
-                    <option value="2800" data-price="50">2800</option>
-                    <option value="5000" data-price="80">5000</option>
-                    <option value="13500" data-price="120">13500</option>
-                </select>
-                <div class="price" id="fortnitePrice"></div>
-                <button onclick="addToCart('Fortnite', document.getElementById('fortniteSelect').value)">Добавить в корзину</button>
-            </div>
-
-            <div class="product">
-                <h2>Rocket League</h2>
-                <p>Количество кредитов:</p>
-                <select id="rocketLeagueSelect">
-                    <option value="500" data-price="20">500</option>
-                    <option value="1100" data-price="35">1100</option>
-                    <option value="3000" data-price="50">3000</option>
-                    <option value="6500" data-price="75">6500</option>
-                </select>
-                <div class="price" id="rocketLeaguePrice"></div>
-                <button onclick="addToCart('Rocket League', document.getElementById('rocketLeagueSelect').value)">Добавить в корзину</button>
-            </div>
-
-            <div class="product">
-                <h2>Brawl Stars</h2>
-                <p>Количество гемов:</p>
-                <select id="brawlStarsSelect">
-                    <option value="30" data-price="5">30</option>
-                    <option value="80" data-price="10">80</option>
-                    <option value="170" data-price="15">170</option>
-                    <option value="360" data-price="25">360</option>
-                    <option value="720" data-price="40">720</option>
-                </select>
-                <div class="price" id="brawlStarsPrice"></div>
-                <button onclick="addToCart('Brawl Stars', document.getElementById('brawlStarsSelect').value)">Добавить в корзину</button>
-            </div>
-        </div>
+        <h1>Каталог фильмов</h1>
+        <div class="catalog" id="catalog"></div>
     </div>
 
     <script>
-        function updatePrice(selectId, priceId) {
-            const select = document.getElementById(selectId);
-            const price = document.getElementById(priceId);
-            const selectedOption = select.options[select.selectedIndex];
-            const selectedPrice = selectedOption.getAttribute('data-price');
-            price.textContent = `Цена: $${selectedPrice}`;
-        }
-    
         const products = [
-            { name: 'Roblox', image: 'roblox.jpg', options: [40, 80, 200, 400], prices: [10, 15, 25, 40] },
-            { name: 'Fortnite', image: 'fortnite.jpg', options: [1000, 2800, 5000, 13500], prices: [30, 50, 80, 120] },
-            { name: 'Rocket League', image: 'rocket-league.jpg', options: [500, 1100, 3000, 6500], prices: [20, 35, 50, 75] },
-            { name: 'Brawl Stars', image: 'brawl-stars.jpg', options: [30, 80, 170, 360, 720], prices: [5, 10, 15, 25, 40] }
+            { name: 'Пила', image: 'https://www.proficinema.com/upload/iblock/cf0/cf0a6ea1e13c0c42a2bc2f0cb053ce94.jpg', options: [1, 2, 3, 4], parts: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], prices: [10, 20, 30, 40] },
+            { name: 'Бегущий в лабиринте', image: 'https://klubkrik.ru/wp-content/uploads/2015/04/575613.jpg', options: [1, 2, 3, 4], parts: [1, 2, 3], prices: [7, 15, 22, 29] },
+            { name: 'Такси', image: 'https://wallpapercosmos.com/w/full/c/b/a/352680-1920x1080-desktop-full-hd-taxi-movie-wallpaper.jpg', options: [1, 2, 3, 4], parts: [1, 2, 3,4], prices: [8, 16, 24, 32] },
+            { name: 'Форсаж', image: 'https://sun9-35.userapi.com/hCWfxGwcuIRvmfKQXwr9OZNN4mu4ERi538DsZg/QlzDt8Eazmk.jpg', options: [1, 2, 3, 4], parts: [1, 2, 3,4,5,6,7,8,9,10], prices: [9, 18, 27, 36] }
         ];
-    
-        function addToCart(productName, quantity) {
-            const product = products.find(p => p.name === productName);
-            const priceIndex = product.options.indexOf(parseInt(quantity));
-            const totalPrice = product.prices[priceIndex];
-            alert(`Товар "${productName}" в количестве ${quantity} добавлен в корзину. Общая сумма: $${totalPrice}`);
-        }
-    
-        window.onload = function () {
-            updatePrice('robloxSelect', 'robloxPrice');
-            updatePrice('fortniteSelect', 'fortnitePrice');
-            updatePrice('rocketLeagueSelect', 'rocketLeaguePrice');
-            updatePrice('brawlStarsSelect', 'brawlStarsPrice');
-    
-            // Добавляем обработчики событий для обновления цены при изменении количества товара
-            document.getElementById('robloxSelect').addEventListener('change', function () {
-                updatePrice('robloxSelect', 'robloxPrice');
+
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product';
+
+            const image = document.createElement('img');
+            image.src = product.image;
+            image.alt = product.name;
+            card.appendChild(image);
+
+            const title = document.createElement('h2');
+            title.textContent = product.name;
+            card.appendChild(title);
+
+            const paragraph = document.createElement('p');
+            paragraph.textContent = 'Количество билетов:';
+            card.appendChild(paragraph);
+
+            const select = document.createElement('select');
+            product.options.forEach((option, index) => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                optionElement.setAttribute('data-price', product.prices[index]);
+                select.appendChild(optionElement);
             });
-    
-            document.getElementById('fortniteSelect').addEventListener('change', function () {
-                updatePrice('fortniteSelect', 'fortnitePrice');
+            card.appendChild(select);
+
+            const partParagraph = document.createElement('p');
+            partParagraph.textContent = 'Выберите часть фильма:';
+            card.appendChild(partParagraph);
+
+            const partSelect = document.createElement('select');
+            product.parts.forEach(part => {
+                const partOption = document.createElement('option');
+                partOption.value = part;
+                partOption.textContent = `Часть ${part}`;
+                partSelect.appendChild(partOption);
             });
-    
-            document.getElementById('rocketLeagueSelect').addEventListener('change', function () {
-                updatePrice('rocketLeagueSelect', 'rocketLeaguePrice');
-            });
-    
-            document.getElementById('brawlStarsSelect').addEventListener('change', function () {
-                updatePrice('brawlStarsSelect', 'brawlStarsPrice');
-            });
-        };
-    </script>
-    
+            card.appendChild(partSelect);
+
+const timeParagraph = document.createElement('p');
+timeParagraph.textContent = 'Выберите время сеанса:';
+card.appendChild(timeParagraph);
+
+const timeSelect = document.createElement('select');
+const times = ['10:00', '13:00', '16:00', '19:00'];
+times.forEach(time => {
+    const timeOption = document.createElement('option');
+    timeOption.value = time;
+    timeOption.textContent = time;
+    timeSelect.appendChild(timeOption);
+});
+card.appendChild(timeSelect);
+const price = document.createElement('div');
+price.className = 'price';
+card.appendChild(price);
+
+select.addEventListener('change', function () {
+    const selectedOption = this.options[this.selectedIndex];
+    const selectedPrice = selectedOption.getAttribute('data-price');
+    price.textContent = `Цена: $${selectedPrice * this.value}`;
+});
+const button = document.createElement('button');
+button.textContent = 'Забронировать';
+button.addEventListener('click', function () {
+    const selectedQuantity = select.value;
+    const selectedPart = partSelect.value; // Получаем выбранную часть фильма
+    const selectedTime = timeSelect.value;
+    const selectedPrice = select.options[select.selectedIndex].getAttribute('data-price');
+    let message = `Фильм "${product.name}". Часть ${selectedPart}.`;
+
+    message += ` Количество билетов: ${selectedQuantity}. Время сеанса ${selectedTime}. Общая сумма: $${selectedPrice * selectedQuantity}.`;
+    alert(message);
+});
+card.appendChild(button);
+
+return card;
+}
+
+const catalog = document.getElementById('catalog');
+products.forEach(product => {
+catalog.appendChild(createProductCard(product));
+});
+</script>
 </body>
 </html>
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
