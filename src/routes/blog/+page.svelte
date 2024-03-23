@@ -168,7 +168,7 @@ card.appendChild(price);
 select.addEventListener('change', function () {
     const selectedOption = this.options[this.selectedIndex];
     const selectedPrice = selectedOption.getAttribute('data-price');
-    price.textContent = `Цена: $${selectedPrice * this.value}`;
+    price.textContent = `Цена: $${selectedPrice}`;
 });
 const button = document.createElement('button');
 button.textContent = 'Забронировать';
@@ -179,7 +179,7 @@ button.addEventListener('click', function () {
     const selectedPrice = select.options[select.selectedIndex].getAttribute('data-price');
     let message = `Фильм "${product.name}". Часть ${selectedPart}.`;
 
-    message += ` Количество билетов: ${selectedQuantity}. Время сеанса ${selectedTime}. Общая сумма: $${selectedPrice * selectedQuantity}.`;
+    message += ` Количество билетов: ${selectedQuantity}. Время сеанса ${selectedTime}. Общая сумма: $${selectedPrice}.`;
     alert(message);
 });
 card.appendChild(button);
