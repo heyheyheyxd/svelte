@@ -53,6 +53,7 @@
                 <a href="/blog" class="link">Каталог</a>
                 <a href="/login" class="link">Анонс</a>
                 <a href="/contact" class="link">Контакты</a>
+                <a href="/kors" class="link">Отзывы</a>
             </div>
         </div>
     </nav>

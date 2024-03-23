@@ -97,6 +97,7 @@
 <body class="background">
     <div class="container">
         <h1>Каталог фильмов</h1>
+        <div id="cart-items-count">Товаров в корзине: 0</div>
         <div class="catalog" id="catalog"></div>
     </div>
 
@@ -191,6 +192,8 @@ const catalog = document.getElementById('catalog');
 products.forEach(product => {
 catalog.appendChild(createProductCard(product));
 });
+
+
 </script>
 </body>
 </html>
