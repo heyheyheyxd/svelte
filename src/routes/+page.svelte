@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heyheyhey Cinema</title>
     <style>
-        /* Общие стили */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,12 +13,12 @@
             background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
         }
 
-        /* Стили для контейнера */
+        
         .container {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(204, 204, 255, 0); /* Здесь 0.5 это значение альфа, делающее цвет полупрозрачным */
+    background-color: rgba(204, 204, 255, 0); 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -44,11 +43,6 @@
             color: #ff0000;
             margin-bottom: 20px;
         }
-
-        /* Стили для фонового блока */
-       
-
-        /* Стили для кнопки */
         .scroll-button {
             margin-top: 20px;
         }
@@ -65,8 +59,6 @@
         .scroll-button a:hover {
             background-color: #8b0000;
         }
-
-        /* Стили для стрелки */
         .arrow {
             width: 0;
             height: 0;
@@ -92,7 +84,7 @@
 
     <div class="background-div"></div>
 </body>
-</html>
+
 
 
 

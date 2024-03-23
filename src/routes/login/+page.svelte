@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,7 @@
             background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
             background-size: cover;
             background-position: center;
-            color: #ffffff; /* белый цвет текста */
+            color: #ffffff; 
         }
 
         .container {
@@ -25,18 +24,18 @@
         }
 
         .movie {
-            width: 48%; /* Ширина блока фильма, чтобы два фильма помещались на одной строке */
+            width: 48%; 
             margin-bottom: 30px;
-            background-color: #000000; /* черный цвет фона */
+            background-color: #000000; 
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* красная тень */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); 
         }
 
         .movie img {
             width: 100%;
-            height: 200px; /* Фиксированная высота изображения */
-            object-fit: cover; /* Растягиваем изображение, чтобы оно полностью заполнило свой контейнер */
-            border-radius: 8px 8px 0 0; /* Закругление верхних углов изображения */
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px 8px 0 0; 
         }
 
         .movie-content {
@@ -45,13 +44,13 @@
 
         .movie h2 {
             font-size: 1.8rem;
-            color: #ff0000; /* красный цвет заголовка фильма */
+            color: #ff0000; 
             margin-bottom: 10px;
         }
 
         .movie p {
             font-size: 1.2rem;
-            color: #aaaaaa; /* серый цвет текста */
+            color: #aaaaaa; 
             margin-bottom: 10px;
         }
 
@@ -113,7 +112,7 @@
     </div>
 
     <script>
-        // Анимация появления элементов
+        
         window.onload = function () {
             const elements = document.querySelectorAll('.fade-in');
             elements.forEach(element => {
@@ -123,7 +122,6 @@
         };
     </script>
 </body>
-</html>
 
 
 

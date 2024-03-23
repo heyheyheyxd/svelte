@@ -1,23 +1,17 @@
 <body>
-<script>
-    // Обработчик отправки формы
+<script>   
     async function handleSubmit(event) {
         event.preventDefault();
-        
-        // Получаем данные из формы
         const formData = new FormData(event.target);
         const name = formData.get('name');
         const email = formData.get('email');
         const message = formData.get('message');
-        
-        // Отправляем данные на сервер или обрабатываем их локально
         try {
-            // В этом месте можно отправить данные на сервер или выполнить другие необходимые действия
+            
             console.log('Имя:', name);
             console.log('Email:', email);
             console.log('Отзыв:', message);
             
-            // Очистка формы после успешной отправки
             event.target.reset();
         } catch (error) {
             console.error('Ошибка:', error);
@@ -29,7 +23,7 @@
     <section>
         <h1>Отзывы наших посетителей</h1>
         <p>Мы ценим каждого посетителя и всегда открыты к вашим предложениям и замечаниям!</p>
-        <!-- Форма для отправки отзывов -->
+        
         <form on:submit="{handleSubmit}">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" name="name" required>
@@ -56,9 +50,9 @@ body {
 }
 
 main {
-    background-color: rgba(0, 0, 0, 0.7); /* Черный цвет с полупрозрачностью */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);/* Белый цвет с прозрачностью */
-    color: #fff; /* Белый цвет для текста */
+    background-color: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff; 
     padding: 20px;
     max-width: 700px; /* Максимальная ширина блока */
     margin: 20px auto; /* Центрирование блока */
@@ -67,27 +61,27 @@ p{
     color: #fff;
 }
 h1 {
-    color: #fff; /* Чёрный цвет для заголовка */
+    color: #fff; 
 }
 
 label {
-    color: #fff; /* Тёмно-серый цвет для текста меток */
+    color: #fff; 
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #fff; /* Белый цвет для поля ввода */
-    color: #333; /* Чёрный цвет для текста в полях ввода */
-    border: 1px solid #ccc; /* Светло-серая рамка вокруг полей ввода */
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #ccc; 
     padding: 8px;
     margin-bottom: 10px;
     width: 100%;
 }
 
 button[type="submit"] {
-        background-color: #ff0000; /* Красный цвет для кнопки */
-        color: #000; /* Чёрный цвет для текста на кнопке */
+        background-color: #ff0000; 
+        color: #000; 
         padding: 10px 20px;
         border: none;
         cursor: pointer;
@@ -95,7 +89,7 @@ button[type="submit"] {
     }
 
     button[type="submit"]:hover {
-        background-color: #a30000; /* Тёмно-красный цвет при наведении на кнопку */
+        background-color: #a30000; 
     }
 
 </style>
