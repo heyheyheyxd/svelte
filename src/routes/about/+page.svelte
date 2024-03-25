@@ -66,6 +66,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             text-decoration: none; /* Убираем подчеркивание для ссылки */
+            
         }
 
         .btn:hover {

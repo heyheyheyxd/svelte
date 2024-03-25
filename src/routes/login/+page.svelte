@@ -34,7 +34,7 @@
 
         .movie img {
             width: 100%;
-            height: 200px; 
+            height: 300px; 
             object-fit: cover; 
             border-radius: 8px 8px 0 0; 
         }
@@ -67,9 +67,27 @@
                 opacity: 1;
             }
         }
+        .back-to-catalog {
+    background-color: red;
+    color: white;
+    padding: 20px 470px; /* Увеличиваем отступы для создания более длинной кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+        .back-to-catalog:hover {
+            background-color: #ff3333;
+        }
     </style>
 </head>
 <body>
+    <a href="/blog" class="back-to-catalog">Вернуться в каталог фильмов</a>
     <div class="container">
         <div class="movie fade-in">
             <img src="https://www.proficinema.com/upload/iblock/cf0/cf0a6ea1e13c0c42a2bc2f0cb053ce94.jpg" alt="Пила">
