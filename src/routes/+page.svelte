@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden; 
-            background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
+            background-image: url('https://zakon.ru/Content/entriesattachments/7f1c9f22-5ff4-49bb-b597-70223d6014de.jpg');
         }
 
         

@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            background-image: url('https://top-fon.com/uploads/posts/2023-01/1674815996_top-fon-com-p-kinoteatr-fon-dlya-prezentatsii-85.jpg');
+            background-image: url('https://zakon.ru/Content/entriesattachments/7f1c9f22-5ff4-49bb-b597-70223d6014de.jpg');
         }
         .container {
             max-width: 1200px;
